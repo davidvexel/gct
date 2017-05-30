@@ -42,8 +42,8 @@ while($rowSliders = mysql_fetch_assoc($querySliders)){
 <div id="thumbs" class="flexslider">
 <ul class="slides">
 <?php foreach($arrSliders as $row_Slider) { ?>
-<li><img src="<?php echo $path; ?>timthumb.php?src=imagenes/slider/<? echo $row_Slider['imgSlider']; ?>&w=220&h=110&zc=1&q=90" class="imagen"></li>
-<? } ?>
+<li><img src="<?php echo $path; ?>timthumb.php?src=imagenes/slider/<?php echo $row_Slider['imgSlider']; ?>&w=220&h=110&zc=1&q=90" class="imagen"></li>
+<?php } ?>
 </ul>
 </div><!--fin #thumbs-->
 </div><!--fin .four.columns-->
@@ -51,8 +51,8 @@ while($rowSliders = mysql_fetch_assoc($querySliders)){
 <div id="slider" class="flexslider">
 <ul class="slides">
 <?php foreach($arrSliders as $row_Slider) { ?>
-<li><a href="<?php echo $row_Slider['linkSlider']; ?>"><img src="<?php echo $path; ?>imagenes/slider/<? echo $row_Slider['imgSlider']; ?>"></a></li>
-<? } ?>
+<li><a href="<?php echo $row_Slider['linkSlider']; ?>"><img src="<?php echo $path; ?>imagenes/slider/<?php echo $row_Slider['imgSlider']; ?>"></a></li>
+<?php } ?>
 </ul>
 </div>
 </div><!--fin .twelve.columns-->
@@ -73,7 +73,7 @@ while($rowSliders = mysql_fetch_assoc($querySliders)){
 <a href="<?php echo $path; ?>detalles/<?php echo $row_Utours['id_tour']."-".urls_amigables($nom_tour).".php"; ?>" title=""><span class="over">&nbsp;</span><img src="<?php echo $path; ?>timthumb.php?src=<?php echo $pathImagen.$row_Utours['imagen']; ?>&amp;w=160&amp;h=120&amp;zc=1&amp;q=90" alt="" title="" class="imagen"></a>
 </figure><!--fin figure.three.columns-->
 <div class="datosTour seven columns">
-<h3 class="nomTour"><a class="ax" href="<?php echo $path; ?>detalles/<?php echo $row_Utours['id_tour']."-".urls_amigables($nom_tour).".php"; ?>"><? echo $row_Utours['nom_tour'.$idiomaDB]; ?></a></h3>
+<h3 class="nomTour"><a class="ax" href="<?php echo $path; ?>detalles/<?php echo $row_Utours['id_tour']."-".urls_amigables($nom_tour).".php"; ?>"><?php echo $row_Utours['nom_tour'.$idiomaDB]; ?></a></h3>
 <p class="desTour"><?php echo $row_Utours['descripcion'.$idiomaDB]; ?></p>
 </div><!--fin .datosTour.seven.columns-->
 <div class="preTour two columns omega">
