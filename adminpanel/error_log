@@ -1,0 +1,624 @@
+[29-Feb-2012 18:51:15 UTC] PHP Warning:  require_once(../Connections/conexion.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/sunandsa/public_html/adminpanel/index.php on line 1
+[29-Feb-2012 18:51:15 UTC] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../Connections/conexion.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sunandsa/public_html/adminpanel/index.php on line 1
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  include(../include/function.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/sunandsa/public_html/adminpanel/index.php on line 2
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  include(../include/function.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/sunandsa/public_html/adminpanel/index.php on line 2
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../include/function.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sunandsa/public_html/adminpanel/index.php on line 2
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/sunandsa/public_html/adminpanel/index.php:2) in /home/sunandsa/public_html/adminpanel/index.php on line 6
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/sunandsa/public_html/adminpanel/index.php:2) in /home/sunandsa/public_html/adminpanel/index.php on line 6
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  include(../include/function.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/sunandsa/public_html/adminpanel/index.php on line 2
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  include(../include/function.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/sunandsa/public_html/adminpanel/index.php on line 2
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../include/function.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sunandsa/public_html/adminpanel/index.php on line 2
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/sunandsa/public_html/adminpanel/index.php:2) in /home/sunandsa/public_html/adminpanel/index.php on line 6
+[29-Feb-2012 19:03:26 UTC] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/sunandsa/public_html/adminpanel/index.php:2) in /home/sunandsa/public_html/adminpanel/index.php on line 6
+[01-Mar-2012 17:20:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sunandsa/public_html/adminpanel/agregar-tour.php:7) in /home/sunandsa/public_html/adminpanel/agregar-tour.php on line 58
+[01-Mar-2012 17:21:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sunandsa/public_html/adminpanel/agregar-tour.php:7) in /home/sunandsa/public_html/adminpanel/agregar-tour.php on line 58
+[01-Mar-2012 22:52:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sunandsa/public_html/adminpanel/agregar-tour.php:7) in /home/sunandsa/public_html/adminpanel/agregar-tour.php on line 58
+[02-Mar-2012 00:59:09 UTC] Comprobacion de la foto1
+[02-Mar-2012 00:59:09 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[02-Mar-2012 16:11:31 UTC] Comprobacion de la foto1
+[02-Mar-2012 16:11:31 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[02-Mar-2012 16:12:24 UTC] Comprobacion de la foto1
+[02-Mar-2012 16:12:24 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[02-Mar-2012 16:13:21 UTC] Comprobacion de la foto2
+[02-Mar-2012 16:13:21 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[03-Mar-2012 00:13:22 UTC] Comprobacion de la foto1
+[03-Mar-2012 00:13:22 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[03-Mar-2012 00:46:20 UTC] Comprobacion de la foto1
+[03-Mar-2012 00:46:20 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[03-Mar-2012 00:46:50 UTC] Comprobacion de la foto1
+[03-Mar-2012 00:46:50 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[03-Mar-2012 00:48:36 UTC] Comprobacion de la foto2
+[03-Mar-2012 00:48:36 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:19:00 UTC] Comprobacion de la foto1
+[06-Mar-2012 23:19:00 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:21:08 UTC] Comprobacion de la foto2
+[06-Mar-2012 23:21:08 UTC] Breaking, no uploaded file?
+[06-Mar-2012 23:21:08 UTC] $_FILES [ imagen2 ] [ "error" ] = 1 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:21:08 UTC] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/sunandsa/public_html/include/function.php on line 6
+[06-Mar-2012 23:23:13 UTC] Comprobacion de la foto1
+[06-Mar-2012 23:23:13 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:23:27 UTC] Comprobacion de la foto2
+[06-Mar-2012 23:23:27 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:23:44 UTC] Comprobacion de la foto3
+[06-Mar-2012 23:23:44 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:23:54 UTC] Comprobacion de la foto4
+[06-Mar-2012 23:23:54 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:24:05 UTC] Comprobacion de la foto5
+[06-Mar-2012 23:24:05 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:24:18 UTC] Comprobacion de la foto6
+[06-Mar-2012 23:24:18 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:24:29 UTC] Comprobacion de la foto7
+[06-Mar-2012 23:24:29 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:24:42 UTC] Comprobacion de la foto8
+[06-Mar-2012 23:24:42 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:43:42 UTC] Comprobacion de la foto1
+[06-Mar-2012 23:43:42 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:44:02 UTC] Comprobacion de la foto1
+[06-Mar-2012 23:44:02 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:44:22 UTC] Comprobacion de la foto2
+[06-Mar-2012 23:44:22 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:44:34 UTC] Comprobacion de la foto3
+[06-Mar-2012 23:44:34 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:44:50 UTC] Comprobacion de la foto4
+[06-Mar-2012 23:44:50 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:45:29 UTC] Comprobacion de la foto5
+[06-Mar-2012 23:45:29 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:45:47 UTC] Comprobacion de la foto6
+[06-Mar-2012 23:45:47 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:46:28 UTC] Comprobacion de la foto7
+[06-Mar-2012 23:46:28 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:46:42 UTC] Comprobacion de la foto8
+[06-Mar-2012 23:46:42 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:47:36 UTC] Comprobacion de la foto1
+[06-Mar-2012 23:47:36 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[06-Mar-2012 23:59:48 UTC] Comprobacion de la foto1
+[06-Mar-2012 23:59:48 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:01:04 UTC] Comprobacion de la foto1
+[07-Mar-2012 00:01:04 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:01:24 UTC] Comprobacion de la foto2
+[07-Mar-2012 00:01:24 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:02:30 UTC] Comprobacion de la foto3
+[07-Mar-2012 00:02:30 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:02:57 UTC] Comprobacion de la foto4
+[07-Mar-2012 00:02:57 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:03:18 UTC] Comprobacion de la foto5
+[07-Mar-2012 00:03:18 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:04:04 UTC] Comprobacion de la foto5
+[07-Mar-2012 00:04:04 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:04:24 UTC] Comprobacion de la foto5
+[07-Mar-2012 00:04:24 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:04:38 UTC] Comprobacion de la foto6
+[07-Mar-2012 00:04:38 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:04:54 UTC] Comprobacion de la foto7
+[07-Mar-2012 00:04:54 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:05:13 UTC] Comprobacion de la foto8
+[07-Mar-2012 00:05:13 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:08:27 UTC] Comprobacion de la foto8
+[07-Mar-2012 00:08:27 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:08:52 UTC] Comprobacion de la foto3
+[07-Mar-2012 00:08:52 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:42:10 UTC] Comprobacion de la foto1
+[07-Mar-2012 00:42:10 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:42:31 UTC] Comprobacion de la foto1
+[07-Mar-2012 00:42:31 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:42:41 UTC] Comprobacion de la foto2
+[07-Mar-2012 00:42:41 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:42:53 UTC] Comprobacion de la foto3
+[07-Mar-2012 00:42:53 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:43:07 UTC] Comprobacion de la foto4
+[07-Mar-2012 00:43:07 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:43:19 UTC] Comprobacion de la foto5
+[07-Mar-2012 00:43:19 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:43:31 UTC] Comprobacion de la foto6
+[07-Mar-2012 00:43:31 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:43:48 UTC] Comprobacion de la foto7
+[07-Mar-2012 00:43:48 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 00:44:00 UTC] Comprobacion de la foto8
+[07-Mar-2012 00:44:00 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:38:44 UTC] Comprobacion de la foto1
+[07-Mar-2012 15:38:44 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:39:56 UTC] Comprobacion de la foto1
+[07-Mar-2012 15:39:56 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:40:10 UTC] Comprobacion de la foto2
+[07-Mar-2012 15:40:10 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:40:22 UTC] Comprobacion de la foto3
+[07-Mar-2012 15:40:22 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:40:35 UTC] Comprobacion de la foto4
+[07-Mar-2012 15:40:35 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:40:48 UTC] Comprobacion de la foto5
+[07-Mar-2012 15:40:48 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:41:01 UTC] Comprobacion de la foto6
+[07-Mar-2012 15:41:01 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:41:14 UTC] Comprobacion de la foto7
+[07-Mar-2012 15:41:14 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:41:27 UTC] Comprobacion de la foto8
+[07-Mar-2012 15:41:27 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:53:32 UTC] Comprobacion de la foto1
+[07-Mar-2012 15:53:32 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:53:59 UTC] Comprobacion de la foto1
+[07-Mar-2012 15:53:59 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:54:10 UTC] Comprobacion de la foto2
+[07-Mar-2012 15:54:10 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:54:20 UTC] Comprobacion de la foto3
+[07-Mar-2012 15:54:20 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:54:33 UTC] Comprobacion de la foto4
+[07-Mar-2012 15:54:33 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:54:45 UTC] Comprobacion de la foto5
+[07-Mar-2012 15:54:45 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:54:59 UTC] Comprobacion de la foto6
+[07-Mar-2012 15:54:59 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:55:13 UTC] Comprobacion de la foto7
+[07-Mar-2012 15:55:13 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 15:55:30 UTC] Comprobacion de la foto8
+[07-Mar-2012 15:55:30 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:07:38 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:07:38 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:07:58 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:07:58 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:08:10 UTC] Comprobacion de la foto2
+[07-Mar-2012 16:08:10 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:08:19 UTC] Comprobacion de la foto3
+[07-Mar-2012 16:08:19 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:08:36 UTC] Comprobacion de la foto4
+[07-Mar-2012 16:08:36 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:08:56 UTC] Comprobacion de la foto5
+[07-Mar-2012 16:08:56 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:09:11 UTC] Comprobacion de la foto6
+[07-Mar-2012 16:09:11 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:09:22 UTC] Comprobacion de la foto7
+[07-Mar-2012 16:09:22 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:09:37 UTC] Comprobacion de la foto8
+[07-Mar-2012 16:09:37 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:13:28 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:13:28 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:13:45 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:13:45 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:13:56 UTC] Comprobacion de la foto2
+[07-Mar-2012 16:13:56 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:14:09 UTC] Comprobacion de la foto3
+[07-Mar-2012 16:14:09 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:14:19 UTC] Comprobacion de la foto4
+[07-Mar-2012 16:14:19 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:14:34 UTC] Comprobacion de la foto5
+[07-Mar-2012 16:14:34 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:14:59 UTC] Comprobacion de la foto6
+[07-Mar-2012 16:14:59 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:15:14 UTC] Comprobacion de la foto7
+[07-Mar-2012 16:15:14 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:15:30 UTC] Comprobacion de la foto8
+[07-Mar-2012 16:15:30 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:25:39 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:25:39 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:26:00 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:26:00 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:26:12 UTC] Comprobacion de la foto2
+[07-Mar-2012 16:26:12 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:26:26 UTC] Comprobacion de la foto3
+[07-Mar-2012 16:26:26 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:26:39 UTC] Comprobacion de la foto4
+[07-Mar-2012 16:26:39 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:26:51 UTC] Comprobacion de la foto5
+[07-Mar-2012 16:26:51 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:27:03 UTC] Comprobacion de la foto6
+[07-Mar-2012 16:27:03 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:27:15 UTC] Comprobacion de la foto7
+[07-Mar-2012 16:27:15 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:27:25 UTC] Comprobacion de la foto8
+[07-Mar-2012 16:27:25 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:56:16 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:56:16 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:57:47 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:57:47 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:58:07 UTC] Comprobacion de la foto1
+[07-Mar-2012 16:58:07 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:58:18 UTC] Comprobacion de la foto2
+[07-Mar-2012 16:58:18 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:58:28 UTC] Comprobacion de la foto3
+[07-Mar-2012 16:58:28 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:58:37 UTC] Comprobacion de la foto4
+[07-Mar-2012 16:58:37 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:58:50 UTC] Comprobacion de la foto5
+[07-Mar-2012 16:58:50 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:59:01 UTC] Comprobacion de la foto6
+[07-Mar-2012 16:59:01 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:59:11 UTC] Comprobacion de la foto7
+[07-Mar-2012 16:59:11 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 16:59:25 UTC] Comprobacion de la foto8
+[07-Mar-2012 16:59:25 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:00:43 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:00:43 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:00:57 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:00:57 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:01:09 UTC] Comprobacion de la foto2
+[07-Mar-2012 17:01:09 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:01:58 UTC] Comprobacion de la foto3
+[07-Mar-2012 17:01:58 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:02:09 UTC] Comprobacion de la foto4
+[07-Mar-2012 17:02:09 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:02:22 UTC] Comprobacion de la foto5
+[07-Mar-2012 17:02:22 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:02:35 UTC] Comprobacion de la foto6
+[07-Mar-2012 17:02:35 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:02:48 UTC] Comprobacion de la foto7
+[07-Mar-2012 17:02:48 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:03:01 UTC] Comprobacion de la foto8
+[07-Mar-2012 17:03:01 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:22:43 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:22:43 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:23:02 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:23:02 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:23:15 UTC] Comprobacion de la foto2
+[07-Mar-2012 17:23:15 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:23:41 UTC] Comprobacion de la foto3
+[07-Mar-2012 17:23:41 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:23:59 UTC] Comprobacion de la foto4
+[07-Mar-2012 17:23:59 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:24:11 UTC] Comprobacion de la foto5
+[07-Mar-2012 17:24:11 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:24:26 UTC] Comprobacion de la foto6
+[07-Mar-2012 17:24:26 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:24:42 UTC] Comprobacion de la foto7
+[07-Mar-2012 17:24:42 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:24:55 UTC] Comprobacion de la foto8
+[07-Mar-2012 17:24:55 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:44:13 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:44:13 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:44:33 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:44:33 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:44:46 UTC] Comprobacion de la foto2
+[07-Mar-2012 17:44:46 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:44:59 UTC] Comprobacion de la foto3
+[07-Mar-2012 17:44:59 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:45:11 UTC] Comprobacion de la foto4
+[07-Mar-2012 17:45:11 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:45:25 UTC] Comprobacion de la foto5
+[07-Mar-2012 17:45:25 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:45:37 UTC] Comprobacion de la foto6
+[07-Mar-2012 17:45:37 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:45:52 UTC] Comprobacion de la foto7
+[07-Mar-2012 17:45:52 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:46:06 UTC] Comprobacion de la foto8
+[07-Mar-2012 17:46:06 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:47:22 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:47:22 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:47:52 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:47:52 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:48:01 UTC] Comprobacion de la foto2
+[07-Mar-2012 17:48:01 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:48:12 UTC] Comprobacion de la foto3
+[07-Mar-2012 17:48:12 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:48:27 UTC] Comprobacion de la foto4
+[07-Mar-2012 17:48:27 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:48:38 UTC] Comprobacion de la foto5
+[07-Mar-2012 17:48:38 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:48:49 UTC] Comprobacion de la foto6
+[07-Mar-2012 17:48:49 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:49:06 UTC] Comprobacion de la foto7
+[07-Mar-2012 17:49:06 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:49:16 UTC] Comprobacion de la foto8
+[07-Mar-2012 17:49:16 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:50:07 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:50:07 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:50:25 UTC] Comprobacion de la foto1
+[07-Mar-2012 17:50:25 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:50:36 UTC] Comprobacion de la foto2
+[07-Mar-2012 17:50:36 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:50:48 UTC] Comprobacion de la foto3
+[07-Mar-2012 17:50:48 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:51:00 UTC] Comprobacion de la foto4
+[07-Mar-2012 17:51:00 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:51:23 UTC] Comprobacion de la foto5
+[07-Mar-2012 17:51:23 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:51:34 UTC] Comprobacion de la foto6
+[07-Mar-2012 17:51:34 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:51:47 UTC] Comprobacion de la foto7
+[07-Mar-2012 17:51:47 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 17:52:00 UTC] Comprobacion de la foto8
+[07-Mar-2012 17:52:00 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:09:24 UTC] Comprobacion de la foto1
+[07-Mar-2012 18:09:24 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:10:02 UTC] Comprobacion de la foto1
+[07-Mar-2012 18:10:02 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:10:13 UTC] Comprobacion de la foto2
+[07-Mar-2012 18:10:13 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:10:28 UTC] Comprobacion de la foto3
+[07-Mar-2012 18:10:28 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:10:45 UTC] Comprobacion de la foto4
+[07-Mar-2012 18:10:45 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:10:59 UTC] Comprobacion de la foto5
+[07-Mar-2012 18:10:59 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:11:10 UTC] Comprobacion de la foto6
+[07-Mar-2012 18:11:10 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:11:22 UTC] Comprobacion de la foto7
+[07-Mar-2012 18:11:22 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 18:11:40 UTC] Comprobacion de la foto8
+[07-Mar-2012 18:11:40 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 20:09:50 UTC] Comprobacion de la foto1
+[07-Mar-2012 20:09:50 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[07-Mar-2012 20:11:05 UTC] Comprobación de imagen1
+[07-Mar-2012 20:11:05 UTC] Comprobación de imagen2
+[07-Mar-2012 20:11:06 UTC] Comprobación de imagen3
+[07-Mar-2012 20:11:06 UTC] Comprobación de imagen4
+[07-Mar-2012 20:11:06 UTC] Comprobación de imagen5
+[07-Mar-2012 20:11:06 UTC] Comprobación de imagen6
+[07-Mar-2012 20:11:06 UTC] Comprobación de imagen7
+[07-Mar-2012 20:11:07 UTC] Comprobación de imagen8
+[13-Mar-2012 19:44:26 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:44:26 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:44:43 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:44:43 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:44:53 UTC] Comprobacion de la foto2
+[13-Mar-2012 19:44:53 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:45:12 UTC] Comprobacion de la foto3
+[13-Mar-2012 19:45:12 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:45:33 UTC] Comprobacion de la foto4
+[13-Mar-2012 19:45:33 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:45:44 UTC] Comprobacion de la foto5
+[13-Mar-2012 19:45:44 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:45:54 UTC] Comprobacion de la foto6
+[13-Mar-2012 19:45:54 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:46:05 UTC] Comprobacion de la foto7
+[13-Mar-2012 19:46:05 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:46:16 UTC] Comprobacion de la foto8
+[13-Mar-2012 19:46:16 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:47:22 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:47:22 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:47:37 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:47:37 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:47:46 UTC] Comprobacion de la foto2
+[13-Mar-2012 19:47:46 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:47:58 UTC] Comprobacion de la foto3
+[13-Mar-2012 19:47:58 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:48:08 UTC] Comprobacion de la foto4
+[13-Mar-2012 19:48:08 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:48:22 UTC] Comprobacion de la foto5
+[13-Mar-2012 19:48:22 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:48:33 UTC] Comprobacion de la foto6
+[13-Mar-2012 19:48:33 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:48:47 UTC] Comprobacion de la foto7
+[13-Mar-2012 19:48:47 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:48:57 UTC] Comprobacion de la foto8
+[13-Mar-2012 19:48:57 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:50:05 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:50:05 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:50:20 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:50:20 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:50:32 UTC] Comprobacion de la foto2
+[13-Mar-2012 19:50:32 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:50:56 UTC] Comprobacion de la foto3
+[13-Mar-2012 19:50:56 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:51:13 UTC] Comprobacion de la foto4
+[13-Mar-2012 19:51:13 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:51:24 UTC] Comprobacion de la foto5
+[13-Mar-2012 19:51:24 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:51:35 UTC] Comprobacion de la foto6
+[13-Mar-2012 19:51:35 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:51:47 UTC] Comprobacion de la foto7
+[13-Mar-2012 19:51:47 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:51:59 UTC] Comprobacion de la foto8
+[13-Mar-2012 19:51:59 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:53:12 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:53:12 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:53:25 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:53:25 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:53:35 UTC] Comprobacion de la foto2
+[13-Mar-2012 19:53:35 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:53:43 UTC] Comprobacion de la foto3
+[13-Mar-2012 19:53:43 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:53:54 UTC] Comprobacion de la foto4
+[13-Mar-2012 19:53:54 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:54:02 UTC] Comprobacion de la foto5
+[13-Mar-2012 19:54:02 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:54:10 UTC] Comprobacion de la foto6
+[13-Mar-2012 19:54:10 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:54:19 UTC] Comprobacion de la foto7
+[13-Mar-2012 19:54:19 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:54:31 UTC] Comprobacion de la foto8
+[13-Mar-2012 19:54:31 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:55:55 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:55:55 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:56:09 UTC] Comprobacion de la foto1
+[13-Mar-2012 19:56:09 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:56:17 UTC] Comprobacion de la foto2
+[13-Mar-2012 19:56:17 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:56:28 UTC] Comprobacion de la foto3
+[13-Mar-2012 19:56:28 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:56:45 UTC] Comprobacion de la foto4
+[13-Mar-2012 19:56:45 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:57:11 UTC] Comprobacion de la foto4
+[13-Mar-2012 19:57:11 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:57:26 UTC] Comprobacion de la foto4
+[13-Mar-2012 19:57:26 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:57:43 UTC] Comprobacion de la foto5
+[13-Mar-2012 19:57:43 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:57:55 UTC] Comprobacion de la foto6
+[13-Mar-2012 19:57:55 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 19:58:17 UTC] Comprobacion de la foto7
+[13-Mar-2012 19:58:17 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 20:00:31 UTC] Comprobacion de la foto8
+[13-Mar-2012 20:00:31 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 20:01:45 UTC] Comprobacion de la foto1
+[13-Mar-2012 20:01:45 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:19:32 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:19:32 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:19:42 UTC] Comprobacion de la foto2
+[13-Mar-2012 22:19:42 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:19:56 UTC] Comprobacion de la foto3
+[13-Mar-2012 22:19:56 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:20:06 UTC] Comprobacion de la foto4
+[13-Mar-2012 22:20:06 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:20:16 UTC] Comprobacion de la foto5
+[13-Mar-2012 22:20:16 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:20:25 UTC] Comprobacion de la foto6
+[13-Mar-2012 22:20:25 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:20:39 UTC] Comprobacion de la foto7
+[13-Mar-2012 22:20:39 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:20:53 UTC] Comprobacion de la foto8
+[13-Mar-2012 22:20:53 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:21:00 UTC] PHP Warning:  unlink(../fotos_tours/23/23-7-WET) [<a href='function.unlink'>function.unlink</a>]: No such file or directory in /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php on line 14
+[13-Mar-2012 22:21:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php:14) in /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php on line 16
+[13-Mar-2012 22:23:56 UTC] Comprobacion de la foto7
+[13-Mar-2012 22:23:56 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:24:04 UTC] PHP Warning:  unlink(../fotos_tours/23/23-7-WET) [<a href='function.unlink'>function.unlink</a>]: No such file or directory in /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php on line 14
+[13-Mar-2012 22:24:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php:14) in /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php on line 16
+[13-Mar-2012 22:24:09 UTC] PHP Warning:  unlink(../fotos_tours/23/23-7-WET) [<a href='function.unlink'>function.unlink</a>]: No such file or directory in /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php on line 14
+[13-Mar-2012 22:24:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php:14) in /home/sunandsa/public_html/adminpanel/eliminar-imagenes-tour.php on line 16
+[13-Mar-2012 22:30:29 UTC] Comprobacion de la foto7
+[13-Mar-2012 22:30:29 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:32:11 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:32:11 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:32:49 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:32:49 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:32:58 UTC] Comprobacion de la foto2
+[13-Mar-2012 22:32:58 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:33:09 UTC] Comprobacion de la foto3
+[13-Mar-2012 22:33:09 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:33:19 UTC] Comprobacion de la foto4
+[13-Mar-2012 22:33:19 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:33:44 UTC] Comprobacion de la foto5
+[13-Mar-2012 22:33:44 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:33:56 UTC] Comprobacion de la foto6
+[13-Mar-2012 22:33:56 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:34:07 UTC] Comprobacion de la foto7
+[13-Mar-2012 22:34:07 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:34:19 UTC] Comprobacion de la foto8
+[13-Mar-2012 22:34:19 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:36:33 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:36:33 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:36:53 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:36:53 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:37:03 UTC] Comprobacion de la foto2
+[13-Mar-2012 22:37:03 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:37:15 UTC] Comprobacion de la foto3
+[13-Mar-2012 22:37:15 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:38:03 UTC] Comprobacion de la foto4
+[13-Mar-2012 22:38:03 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:38:19 UTC] Comprobacion de la foto5
+[13-Mar-2012 22:38:19 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:38:34 UTC] Comprobacion de la foto6
+[13-Mar-2012 22:38:34 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:38:48 UTC] Comprobacion de la foto7
+[13-Mar-2012 22:38:48 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:39:01 UTC] Comprobacion de la foto8
+[13-Mar-2012 22:39:01 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:39:43 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:39:43 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:40:03 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:40:03 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:40:18 UTC] Comprobacion de la foto2
+[13-Mar-2012 22:40:18 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:40:31 UTC] Comprobacion de la foto3
+[13-Mar-2012 22:40:31 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:41:05 UTC] Comprobacion de la foto4
+[13-Mar-2012 22:41:05 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:41:19 UTC] Comprobacion de la foto5
+[13-Mar-2012 22:41:19 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:41:34 UTC] Comprobacion de la foto6
+[13-Mar-2012 22:41:34 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:41:50 UTC] Comprobacion de la foto7
+[13-Mar-2012 22:41:50 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:42:01 UTC] Comprobacion de la foto8
+[13-Mar-2012 22:42:01 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:42:42 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:42:42 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:43:03 UTC] Comprobacion de la foto1
+[13-Mar-2012 22:43:03 UTC] $_FILES [ imagen1 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:43:16 UTC] Comprobacion de la foto2
+[13-Mar-2012 22:43:16 UTC] $_FILES [ imagen2 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:43:30 UTC] Comprobacion de la foto3
+[13-Mar-2012 22:43:30 UTC] $_FILES [ imagen3 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:43:45 UTC] Comprobacion de la foto4
+[13-Mar-2012 22:43:45 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:44:02 UTC] Comprobacion de la foto5
+[13-Mar-2012 22:44:02 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:44:16 UTC] Comprobacion de la foto6
+[13-Mar-2012 22:44:16 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:44:35 UTC] Comprobacion de la foto7
+[13-Mar-2012 22:44:35 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[13-Mar-2012 22:44:47 UTC] Comprobacion de la foto8
+[13-Mar-2012 22:44:47 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[19-Jun-2012 02:05:09 UTC] Comprobacion de la foto1
+[19-Jun-2012 02:05:09 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[19-Jun-2012 02:21:11 UTC] Comprobación de imagen1
+[19-Jun-2012 02:21:12 UTC] Comprobación de imagen2
+[19-Jun-2012 02:21:12 UTC] Comprobación de imagen3
+[19-Jun-2012 02:21:12 UTC] Comprobación de imagen4
+[19-Jun-2012 02:21:12 UTC] Comprobación de imagen5
+[19-Jun-2012 02:21:13 UTC] Comprobación de imagen6
+[19-Jun-2012 02:21:13 UTC] Breaking, no uploaded file?
+[19-Jun-2012 02:21:13 UTC] Comprobación de imagen7
+[19-Jun-2012 02:21:13 UTC] Breaking, no uploaded file?
+[19-Jun-2012 02:21:13 UTC] Comprobación de imagen8
+[19-Jun-2012 02:21:13 UTC] Breaking, no uploaded file?
+[21-Jun-2012 01:20:24 UTC] Comprobacion de la foto1
+[21-Jun-2012 01:20:24 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[21-Jun-2012 01:21:27 UTC] Comprobación de imagen1
+[21-Jun-2012 01:21:28 UTC] Comprobación de imagen2
+[21-Jun-2012 01:21:28 UTC] Comprobación de imagen3
+[21-Jun-2012 01:21:28 UTC] Comprobación de imagen4
+[21-Jun-2012 01:21:28 UTC] Breaking, no uploaded file?
+[21-Jun-2012 01:21:28 UTC] Comprobación de imagen5
+[21-Jun-2012 01:21:28 UTC] Breaking, no uploaded file?
+[21-Jun-2012 01:21:28 UTC] Comprobación de imagen6
+[21-Jun-2012 01:21:28 UTC] Breaking, no uploaded file?
+[21-Jun-2012 01:21:28 UTC] Comprobación de imagen7
+[21-Jun-2012 01:21:28 UTC] Breaking, no uploaded file?
+[21-Jun-2012 01:21:28 UTC] Comprobación de imagen8
+[21-Jun-2012 01:21:28 UTC] Breaking, no uploaded file?
+[21-Jun-2012 01:30:26 UTC] Comprobacion de la foto1
+[21-Jun-2012 01:30:26 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[21-Jun-2012 01:32:00 UTC] Comprobacion de la foto4
+[21-Jun-2012 01:32:00 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[21-Jun-2012 01:32:24 UTC] Comprobacion de la foto5
+[21-Jun-2012 01:32:24 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[21-Jun-2012 01:32:45 UTC] Comprobacion de la foto6
+[21-Jun-2012 01:32:45 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[21-Jun-2012 01:33:11 UTC] Comprobacion de la foto7
+[21-Jun-2012 01:33:11 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[21-Jun-2012 01:33:32 UTC] Comprobacion de la foto8
+[21-Jun-2012 01:33:32 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[22-Jun-2012 23:39:31 UTC] Comprobacion de la foto1
+[22-Jun-2012 23:39:31 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[23-Jun-2012 01:15:41 UTC] Comprobación de imagen1
+[23-Jun-2012 01:15:41 UTC] Comprobación de imagen2
+[23-Jun-2012 01:15:41 UTC] Comprobación de imagen3
+[23-Jun-2012 01:15:41 UTC] Comprobación de imagen4
+[23-Jun-2012 01:15:41 UTC] Comprobación de imagen5
+[23-Jun-2012 01:15:41 UTC] Comprobación de imagen6
+[23-Jun-2012 01:15:41 UTC] Comprobación de imagen7
+[23-Jun-2012 01:15:41 UTC] Breaking, no uploaded file?
+[23-Jun-2012 01:15:41 UTC] Comprobación de imagen8
+[23-Jun-2012 01:15:41 UTC] Breaking, no uploaded file?
+[23-Jun-2012 01:55:47 UTC] Comprobacion de la foto1
+[23-Jun-2012 01:55:47 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[21-Sep-2012 17:57:14 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, integer given in /home/sunandsa/public_html/adminpanel/admin-cupones.php on line 90
+[21-Sep-2012 17:57:14 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, integer given in /home/sunandsa/public_html/adminpanel/admin-cupones.php on line 107
+[24-Sep-2012 19:18:41 UTC] PHP Fatal error:  Cannot use [] for reading in /home/sunandsa/public_html/adminpanel/edit-cupon.php on line 271
+[24-Sep-2012 19:20:40 UTC] PHP Fatal error:  Cannot use [] for reading in /home/sunandsa/public_html/adminpanel/edit-cupon.php on line 271
+[24-Sep-2012 19:20:41 UTC] PHP Fatal error:  Cannot use [] for reading in /home/sunandsa/public_html/adminpanel/edit-cupon.php on line 271
+[24-Sep-2012 19:20:42 UTC] PHP Fatal error:  Cannot use [] for reading in /home/sunandsa/public_html/adminpanel/edit-cupon.php on line 271
+[24-Sep-2012 19:20:43 UTC] PHP Fatal error:  Cannot use [] for reading in /home/sunandsa/public_html/adminpanel/edit-cupon.php on line 271
+[26-Sep-2012 17:14:47 UTC] Comprobacion de la foto1
+[26-Sep-2012 17:14:47 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 17:17:12 UTC] Comprobacion de la foto1
+[26-Sep-2012 17:17:12 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 17:20:08 UTC] Comprobacion de la foto1
+[26-Sep-2012 17:20:08 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 17:22:07 UTC] Comprobacion de la foto1
+[26-Sep-2012 17:22:07 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 17:24:41 UTC] Comprobacion de la foto1
+[26-Sep-2012 17:24:41 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 18:08:11 UTC] Comprobacion de la foto4
+[26-Sep-2012 18:08:11 UTC] $_FILES [ imagen4 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 18:09:16 UTC] Comprobacion de la foto5
+[26-Sep-2012 18:09:16 UTC] $_FILES [ imagen5 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 18:10:17 UTC] Comprobacion de la foto6
+[26-Sep-2012 18:10:17 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 18:11:50 UTC] Comprobacion de la foto6
+[26-Sep-2012 18:11:50 UTC] $_FILES [ imagen6 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 18:12:41 UTC] Comprobacion de la foto7
+[26-Sep-2012 18:12:41 UTC] $_FILES [ imagen7 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[26-Sep-2012 18:13:42 UTC] Comprobacion de la foto8
+[26-Sep-2012 18:13:42 UTC] $_FILES [ imagen8 ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
+[09-Oct-2012 20:30:13 UTC] Comprobacion de la foto1
+[09-Oct-2012 20:30:13 UTC] $_FILES [ imagen ] [ "error" ] = 0 (UPLOAD_ERR_OK = 0)
