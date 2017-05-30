@@ -1,4 +1,4 @@
-<? 
+<?php 
 require_once('../Connections/conexion.php'); 
 mysql_select_db($database_conexion, $conexion); //Conexiona a la base de datos
 

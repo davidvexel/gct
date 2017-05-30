@@ -98,7 +98,7 @@ $totalRows_imagenes = mysql_num_rows($imagenes);
 			$("#email").css({"color":"#777","background-color":"#fff","border":"#ddd 1px solid"});
 		 } 
 		 
-		if(code != "<? echo date("jny");?>"){
+		if(code != "<?php echo date("jny");?>"){
 			error = true;
 			$("#code").css({"color":"#000","background-color":"#FCCAC3","border":"#EA5338 1px solid"});
 		 } else {

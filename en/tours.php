@@ -87,11 +87,11 @@ $queryString_TCategoria = sprintf("&totalRows_TCategoria=%d%s", $totalRows_TCate
 <article>
 <figure class="zoom three columns alpha">
 <a href="<?php echo $path; ?>en/detalles/<?php echo $row_TCategoria['id_tour']."-".urls_amigables($nom_tour).".php"; ?>" title=""><span class="over">&nbsp;</span>
-<img src="<?php echo $path; ?>timthumb.php?src=<?php echo $pathImagen.$row_TCategoria['imagen']; ?>&amp;w=160&amp;h=120&amp;zc=1&amp;q=90" alt="<? echo $row_TCategoria['nom_tour'.$idiomaDB]; ?>" title="<? echo $row_TCategoria['nom_tour'.$idiomaDB]; ?>" class="imagen">
+<img src="<?php echo $path; ?>timthumb.php?src=<?php echo $pathImagen.$row_TCategoria['imagen']; ?>&amp;w=160&amp;h=120&amp;zc=1&amp;q=90" alt="<?php echo $row_TCategoria['nom_tour'.$idiomaDB]; ?>" title="<?php echo $row_TCategoria['nom_tour'.$idiomaDB]; ?>" class="imagen">
 </a>
 </figure><!--fin figure.three.columns-->
 <div class="datosTour seven columns">
-<h3 class="nomTour"><a href="<?php echo $path; ?>en/detalles/<?php echo $row_TCategoria['id_tour']."-".urls_amigables($nom_tour).".php"; ?>"><? echo $row_TCategoria['nom_tour'.$idiomaDB]; ?></a></h3>
+<h3 class="nomTour"><a href="<?php echo $path; ?>en/detalles/<?php echo $row_TCategoria['id_tour']."-".urls_amigables($nom_tour).".php"; ?>"><?php echo $row_TCategoria['nom_tour'.$idiomaDB]; ?></a></h3>
 <p class="desTour"><?php echo $row_TCategoria['descripcion'.$idiomaDB]; ?></p>
 </div><!--fin .datosTour.seven.columns-->
 <div class="preTour two columns omega">

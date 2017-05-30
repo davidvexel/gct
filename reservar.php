@@ -41,7 +41,7 @@ if($totalRows_tour == 0){
 <p class="titulo">Reservacion</p>
 <p><?php echo TEXTO_RESERVAR; ?></p>
 <p class="titulo"><?php echo DETALLESRESERVACION; ?></p>
-<? 
+<?php 
 	$nom_tour = $row_tour['nom_tour'];
 	$fecha = $_SESSION['fecha'];
 	$tm = $row_tour['tm'];
@@ -84,7 +84,7 @@ if($totalRows_tour == 0){
 <fieldset class="six columns omega">
 <label><?php echo FORMTELEFONO; ?> <span>*</span></label>
 <input name="telefono" id="telefono" type="text" tabindex="2">
-<label><? echo FORMPAIS; ?></label>
+<label><?php echo FORMPAIS; ?></label>
 <select name="pais" id="pais" tabindex="4">
 <option>Afghanistan</option>
 <option>Albania</option>

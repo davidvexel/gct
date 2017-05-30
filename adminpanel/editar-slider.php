@@ -95,7 +95,7 @@ function popupWindow(url, width, height) {
       <td width="159" valign="top" bgcolor="#F3F3F3">Imagen:</td>
       <td width="518">
        <?php if($row_slider['imgSlider'] != NULL) { ?>
-      <img src="../timthumb.php?src=/imagenes/slider/<? echo $row_slider['imgSlider']; ?>&w=223&h=111&zc=1&q=90" />
+      <img src="../timthumb.php?src=/imagenes/slider/<?php echo $row_slider['imgSlider']; ?>&w=223&h=111&zc=1&q=90" />
       <input name="imgSlider" type="hidden" value="<?php echo $row_slider['imgSlider']; ?>" /><br />
       <a href="eliminar-imagen-slider.php?id_slider=<?php echo $row_slider['id_slider']; ?>&amp;imgSlider=<?php echo $row_slider['imgSlider']; ?>" onclick="return confirm('¿Desea eliminar la foto?');"><b>Eliminar Imagen</b></a>
 	  <?php } else { echo '<img src="../timthumb.php?src=/adminpanel/images/img_no.jpg&w=118&h=70&zc=1&q=90" alt="" width="118" height="70" />'; ?> <br />
@@ -107,7 +107,7 @@ function popupWindow(url, width, height) {
     
     <tr valign="baseline">
       <td valign="top" bgcolor="#F3F3F3">Link:</td>
-      <td>http://<input type="text" name="linkSlider"  value="<? echo $row_slider['linkSlider']; ?>" size="32" /></td>
+      <td>http://<input type="text" name="linkSlider"  value="<?php echo $row_slider['linkSlider']; ?>" size="32" /></td>
     </tr>
     
     <tr valign="baseline">

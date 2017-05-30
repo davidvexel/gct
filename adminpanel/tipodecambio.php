@@ -43,9 +43,9 @@ $tipoCambio = $row_cambio['tipo_cambio'];
     
 	<body style="height: 100%;">
 
-<? if($ok) { ?>
+<?php if($ok) { ?>
 <br><div class="alert alert-info"><strong>Atención! </strong> Se ha actualizado el precio de los Tours en PESOS MXN correctamente.. <a href="#" onClick="window.close();" class="rojo alert-link">Cerrar</a></div>
-<? } ?>
+<?php } ?>
 
         <div style="overflow: hidden;" class="centrar">
         
@@ -54,17 +54,17 @@ $tipoCambio = $row_cambio['tipo_cambio'];
             <form action="" method="post" name="form1" id="form1" role="form">
             
                 <div class="form-group">
-                    <input name="tipoCambio" type="text" id="tipoCambio" class="center form-controlx" value="<? echo $tipoCambio; ?>">
+                    <input name="tipoCambio" type="text" id="tipoCambio" class="center form-controlx" value="<?php echo $tipoCambio; ?>">
                 </div>
                     
                 <div class="form-group">
                     <input type="submit" name="submit" value="Actualizar" class="btn btn-primary"></td>
                 </div>
-<? if(!$ok) { ?>
+<?php if(!$ok) { ?>
                 <div class="row form-group">
                     <div class="alert alert-info"><strong>Atención! </strong><br>Al actualizar el tipo de cambio, automáticamente<br>se actualizaran los precios de cada tour en pesos..</div>
                 </div>
-<? } ?>
+<?php } ?>
 
             </form>
             

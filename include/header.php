@@ -1,8 +1,8 @@
 <?php
 $arrCategoria = array();
 $query_categorias = "SELECT * FROM categorias ORDER BY nom_cat ASC";
-$categorias = mysql_query($query_categorias, $conexion) or die("Error en Array Categoria de Header: ".$query_categorias);
-while ($row_categorias = mysql_fetch_assoc($categorias)){
+$categorias = mysqli_query( $conexion, $query_categorias ) or die("Error en Array Categoria de Header: ".$query_categorias);
+while ($row_categorias = mysqli_fetch_assoc($categorias)){
 	array_push( $arrCategoria,$row_categorias );
 	}
 ?>
@@ -24,7 +24,7 @@ while ($row_categorias = mysql_fetch_assoc($categorias)){
 $nom_cat = htmlentities($categoria['nom_cat'.$idiomaDB], ENT_COMPAT, 'utf-8');
 ?>
 <li>
-<a href="<?php echo $path; ?>tours/<?php echo $categoria['id_cat']."-".urls_amigables($nom_cat).".php"; ?>" <? if(isset($_GET['id_cat']) && $_GET['id_cat'] == $categoria['id_cat']){?> class="activo" <? } ?>><?php echo $categoria['nom_cat']; ?></a>
+<a href="<?php echo $path; ?>tours/<?php echo $categoria['id_cat']."-".urls_amigables($nom_cat).".php"; ?>" <?php if(isset($_GET['id_cat']) && $_GET['id_cat'] == $categoria['id_cat']){?> class="activo" <?php } ?>><?php echo $categoria['nom_cat']; ?></a>
 </li>
 <?php } ?>
 </ul>

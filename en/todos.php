@@ -89,7 +89,7 @@ $queryString_TCategoria = sprintf("&totalRows_TCategoria=%d%s", $totalRows_TCate
 </a>
 </figure><!--fin figure.three.columns-->
 <div class="datosTour seven columns">
-<h3 class="nomTour"><a class="ax" href="<?php echo $path; ?>en/detalles/<?php echo $row_TCategoria['id_tour']."-".urls_amigables($nom_tour).".php"; ?>" title=""><? echo $row_TCategoria['nom_tour'.$idiomaDB]; ?></a></h3>
+<h3 class="nomTour"><a class="ax" href="<?php echo $path; ?>en/detalles/<?php echo $row_TCategoria['id_tour']."-".urls_amigables($nom_tour).".php"; ?>" title=""><?php echo $row_TCategoria['nom_tour'.$idiomaDB]; ?></a></h3>
 <p class="desTour"><?php echo $row_TCategoria['descripcion'.$idiomaDB]; ?></p>
 </div><!--fin .datosTour.seven.columns-->
 <div class="preTour two columns omega">

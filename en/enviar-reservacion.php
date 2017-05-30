@@ -111,6 +111,6 @@ mail($correo_empresa,$asunto,$reservacion,"MIME-Version:1.0\nContent-type:text/h
    For any questions or doubts, save your reservation code
 </div>
 <br />
-<? } else {
+<?php } else {
 	header("location: index.php");
 	}?>

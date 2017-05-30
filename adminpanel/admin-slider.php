@@ -141,7 +141,7 @@ function eliminar() {
           <td >
             <a href="editar-slider.php?id_slider=<?php echo $row_slider['id_slider']; ?>">
               <?php if($row_slider['imgSlider'] != NULL) { ?>
-              <img src="../timthumb.php?src=imagenes/slider/<? echo $row_slider['imgSlider']; ?>&w=216&h=88&zc=1&q=90" />
+              <img src="../timthumb.php?src=imagenes/slider/<?php echo $row_slider['imgSlider']; ?>&w=216&h=88&zc=1&q=90" />
               <?php } else { echo '<img src="../timthumb.php?src=/adminpanel/images/img_no.jpg&w=216&h=88&zc=1&q=90" alt="" width="216" height="88" />';} ?>
               </a>
           </td>

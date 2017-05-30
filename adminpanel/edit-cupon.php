@@ -260,21 +260,21 @@ function validacion() {
   <tr>
     <td colspan="4" align="center"><strong>Recomendaciones</strong></td>
   </tr>
-  <? 
+  <?php 
   $array = array("Dinero", "Toallas", "Bronceador", "Equipo de Snorkel", " Cámara", "Sueter" ,"Traje de baño", "Zapatos comodos");
   $c = 0;
   $exp = explode('|',$row_fila['recomendaciones']);
   ?>
   
-  <? for($i = 0; $i < 2; $i++) {?>
+  <?php for($i = 0; $i < 2; $i++) {?>
        <tr>
-  <? for ($j = 0; $j < 4; $j++) { $c++; ?>
-        <td <?php if($c == 4 or $c == 8) {echo 'width="125"';} else {echo 'width="100"';} ?>><input type="checkbox" name="checkbox[]" <? foreach($exp as $rs){if($rs == $array[$c-1] ) { echo 'checked="checked"';}} ?> value="<? echo $array[$c-1]; ?>" /><? echo $array[$c-1];?></td>
-        <? } ?>
+  <?php for ($j = 0; $j < 4; $j++) { $c++; ?>
+        <td <?php if($c == 4 or $c == 8) {echo 'width="125"';} else {echo 'width="100"';} ?>><input type="checkbox" name="checkbox[]" <?php foreach($exp as $rs){if($rs == $array[$c-1] ) { echo 'checked="checked"';}} ?> value="<?php echo $array[$c-1]; ?>" /><?php echo $array[$c-1];?></td>
+        <?php } ?>
        </tr>
-  <? }  ?>
+  <?php }  ?>
   
-  <? //fin ?>
+  <?php //fin ?>
     <td colspan="2"><strong>Observaciones</strong></td>
     <td colspan="2">&nbsp;</td>
   </tr>

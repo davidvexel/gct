@@ -24,7 +24,7 @@ while ($row_categorias = mysql_fetch_assoc($categorias)){
 $nom_cat = htmlentities($categoria['nom_cat'.$idiomaDB], ENT_COMPAT, 'utf-8');
 ?>
 <li>
-<a href="<?php echo $path; ?>en/tours/<?php echo $categoria['id_cat']."-".urls_amigables($nom_cat).".php"; ?>" <? if(isset($_GET['id_cat']) && $_GET['id_cat'] == $categoria['id_cat']){?> class="activo" <? } ?>><?php echo $nom_cat; ?></a>
+<a href="<?php echo $path; ?>en/tours/<?php echo $categoria['id_cat']."-".urls_amigables($nom_cat).".php"; ?>" <?php if(isset($_GET['id_cat']) && $_GET['id_cat'] == $categoria['id_cat']){?> class="activo" <?php } ?>><?php echo $nom_cat; ?></a>
 </li>
 <?php } ?>
 </ul>

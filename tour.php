@@ -61,7 +61,7 @@ $totalRows_tipoCambio = mysql_num_rows($tipoCambio);
 			$imgen = "imagen".$i;
 		if($row_imagenes[$imgen] != NULL) { ?>
 <li>
-<img src="<?php echo $path; ?>timthumb.php?src=<?php echo $pathGaleria.$row_tour['id_tour'].'/'.$row_imagenes[$imgen]; ?>&w=460&h=280&zc=1&q=90" alt="<? echo $row_tour['nom_tour'];?>" title="<? echo $row_tour['nom_tour'];?>">
+<img src="<?php echo $path; ?>timthumb.php?src=<?php echo $pathGaleria.$row_tour['id_tour'].'/'.$row_imagenes[$imgen]; ?>&w=460&h=280&zc=1&q=90" alt="<?php echo $row_tour['nom_tour'];?>" title="<?php echo $row_tour['nom_tour'];?>">
 </li>
 <?php } }while($i <= 20)?>
 </ul>
@@ -74,12 +74,12 @@ $totalRows_tipoCambio = mysql_num_rows($tipoCambio);
 			++$i;
 			$imgen = "imagen".$i;
 		if($row_imagenes[$imgen] != NULL) { ?>
-<li><img src="<?php echo $path; ?>timthumb.php?src=<?php echo $pathGaleria.$row_tour['id_tour'].'/'.$row_imagenes[$imgen]; ?>&w=66&h=40&zc=1&q=90" alt="<? echo $row_tour['nom_tour'];?>" title="<? echo $row_tour['nom_tour'];?>"></li>
+<li><img src="<?php echo $path; ?>timthumb.php?src=<?php echo $pathGaleria.$row_tour['id_tour'].'/'.$row_imagenes[$imgen]; ?>&w=66&h=40&zc=1&q=90" alt="<?php echo $row_tour['nom_tour'];?>" title="<?php echo $row_tour['nom_tour'];?>"></li>
 <?php } }while($i <= 20)?>
 </ul>
 </div><!--fin #carusel-->
 <div class="clear"></div>
-<h1 class="titulo"><? echo $row_tour['nom_tour'.$idiomaDB];?></h1>
+<h1 class="titulo"><?php echo $row_tour['nom_tour'.$idiomaDB];?></h1>
 <?php echo $row_tour['texto_tour'.$idiomaDB]; ?>
 <br>
 <p class="titulo"><?php echo DESCRIPCION; ?></p>
@@ -103,8 +103,8 @@ $totalRows_tipoCambio = mysql_num_rows($tipoCambio);
 $incluye = explode("\n",$row_tour['title'.$idiomaDB]);
 foreach($incluye as $key=>$value) {
 ?>
-<li><? echo $value; ?></li>
-<? }  ?>
+<li><?php echo $value; ?></li>
+<?php }  ?>
 </ul>
 </div><!--fin .four.columns-->
 <div class="four columns omega">
@@ -114,8 +114,8 @@ foreach($incluye as $key=>$value) {
 $no_incluye = explode("\n",$row_tour['keywords'.$idiomaDB]);
 foreach($no_incluye as $key=>$value) {
 ?>
-<li><? echo $value; ?></li>
-<? }  ?>
+<li><?php echo $value; ?></li>
+<?php }  ?>
 </ul>
 </div><!--fin .four.columns-->
 <div class="clear"></div>
@@ -125,8 +125,8 @@ foreach($no_incluye as $key=>$value) {
 $description = explode("\n",$row_tour['description'.$idiomaDB]);
 foreach($description as $key=>$value) {
 ?>
-<li><? echo $value; ?></li>
-<? }  ?>
+<li><?php echo $value; ?></li>
+<?php }  ?>
 </ul>
 </div><!--fin .eight.columns-->
 <div class="four columns">
@@ -166,14 +166,14 @@ foreach($description as $key=>$value) {
 </fieldset>
 <div class="clear"></div>
 <button><?php echo FORMRESERVAR; ?></button>
-<input type="hidden" name="id_tour" id="id_tour" value="<? echo $row_tour['id_tour']; ?>">
+<input type="hidden" name="id_tour" id="id_tour" value="<?php echo $row_tour['id_tour']; ?>">
 <div id="alerta" align="center" style="color:#900">Espere un momento..</div>
 </form>
 </div>
 <div class="borde radius margin-bottom">
 <?php if($row_tour['lat'] != NULL && $row_tour['lon'] != NULL) {?>
 <div class="frame">
-<iframe src="<? echo $path; ?>mapa.php?lat=<? echo $row_tour['lat']; ?>&amp;lon=<? echo $row_tour['lon'];?>&amp;titulo=<? echo $row_tour['nom_tour'];?>"></iframe>
+<iframe src="<?php echo $path; ?>mapa.php?lat=<?php echo $row_tour['lat']; ?>&amp;lon=<?php echo $row_tour['lon'];?>&amp;titulo=<?php echo $row_tour['nom_tour'];?>"></iframe>
 </div><!--fin .frame-->
 <?php  } ?>
 </div><!--fin .borde-->
@@ -226,9 +226,9 @@ $(document).ready(function(e) {
 				
 		if(error == false){	
 			var v=$("#reservar").serialize();	
-			$.post("<? echo $path; ?>datos-sesion.php", v, function(data){ 
+			$.post("<?php echo $path; ?>datos-sesion.php", v, function(data){ 
 			$("#alerta").show();
-			setTimeout(function(){document.location = '<? echo $path; ?>reservar.php'},2000);
+			setTimeout(function(){document.location = '<?php echo $path; ?>reservar.php'},2000);
 			}, "html");
 		}	
 	});

@@ -226,12 +226,12 @@ do {
     
    <tr valign="baseline">
       <td bgcolor="#F3F3F3">Nombre Español:</td>
-      <td><input name="nom_tour" type="text" id="nom_tour" value="<? echo $row_tour['nom_tour'];?>" size="32" maxlength="50" onkeypress="return limita(this, event,50)"
+      <td><input name="nom_tour" type="text" id="nom_tour" value="<?php echo $row_tour['nom_tour'];?>" size="32" maxlength="50" onkeypress="return limita(this, event,50)"
     onkeyup="cuenta(this, event,50,'contaNomEsp')"/><i class="row1">(Máximo de <span id="contaNomEsp"  style="color:#906">50</span> caracteres)</i></td>
     </tr>
     <tr valign="baseline">
       <td bgcolor="#F3F3F3">Nombre del Ingles</td>
-      <td><input name="nom_tourIng" type="text" id="nom_tourIng" value="<? echo $row_tour['nom_tourIng'];?>" size="32" maxlength="50" onkeypress="return limita(this, event,50)"
+      <td><input name="nom_tourIng" type="text" id="nom_tourIng" value="<?php echo $row_tour['nom_tourIng'];?>" size="32" maxlength="50" onkeypress="return limita(this, event,50)"
     onkeyup="cuenta(this, event,50,'contaNomIng')"/><i class="row1">(Máximo de <span id="contaNomIng"  style="color:#906">50</span> caracteres)</i></td>
     </tr>
     <tr valign="baseline">

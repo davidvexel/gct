@@ -6,6 +6,6 @@ $count = count($array);
 
 for ($i = 0; $i < $count; $i++) { ?>
 	
-   <? echo $array[$i]; ?>  <input type="checkbox" name="checkbox[]" value="<? echo $array[$i]; ?>" /> </br>
+   <?php echo $array[$i]; ?>  <input type="checkbox" name="checkbox[]" value="<?php echo $array[$i]; ?>" /> </br>
 	
-<? } ?>
+<?php } ?>
