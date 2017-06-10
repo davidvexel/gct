@@ -119,7 +119,7 @@ form.formulario button{clear:both; margin:0 auto; width:100px; display:block; pa
 #carusel .flex-direction-nav .flex-next{right:-40px!important;}
 #carusel .flex-direction-nav .flex-prev{left:-40px!important;}
 /*precios*/
-.precios{height:300px; background-color:#EBE5DB; border:#DBD1C0 1px solid; margin-bottom:20px;}
+.precios{height:380px; background-color:#EBE5DB; border:#DBD1C0 1px solid; margin-bottom:20px;}
 .precios .titulo{color:#FFF; text-align:center; line-height:40px; padding:0; background-color:#CC3300; border:none; margin-bottom:10px;}
 /*datos*/
 ul.datos{margin:0 0 20px; width:100%; overflow:hidden;}
