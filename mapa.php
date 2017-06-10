@@ -28,7 +28,7 @@ body{position:absolute; vertical-align:baseline; width:100%; height:100%;}
 <body onload="initialize()">
 <div id="cargando">Cargando...</div>
 <div id="gMaps">map div</div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript">
 	function initialize()
