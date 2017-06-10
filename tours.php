@@ -33,7 +33,7 @@ $row_TCategoria = mysqli_fetch_assoc($TCategoria);
 if (isset($_GET['totalRows_TCategoria'])) {
   $totalRows_TCategoria = $_GET['totalRows_TCategoria'];
 } else {
-  $all_TCategoria = mysqli_query($query_TCategoria);
+  $all_TCategoria = mysqli_query($conexion, $query_TCategoria);
   $totalRows_TCategoria = mysqli_num_rows($all_TCategoria);
 }
 $totalPages_TCategoria = ceil($totalRows_TCategoria/$maxRows_TCategoria)-1;

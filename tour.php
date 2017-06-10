@@ -99,7 +99,7 @@ $totalRows_tipoCambio = mysqli_num_rows($tipoCambio);
 <div class="four columns alpha">
 <p class="titulo"><?php echo INCLUYE; //Campo title ?></p>
 <ul class="lista">
-<?
+<?php
 $incluye = explode("\n",$row_tour['title'.$idiomaDB]);
 foreach($incluye as $key=>$value) {
 ?>
@@ -110,7 +110,7 @@ foreach($incluye as $key=>$value) {
 <div class="four columns omega">
 <p class="titulo"><?php echo NOINCLUYE; //Campo keywords?></p>
 <ul class="lista">
-<?
+<?php
 $no_incluye = explode("\n",$row_tour['keywords'.$idiomaDB]);
 foreach($no_incluye as $key=>$value) {
 ?>
@@ -121,7 +121,7 @@ foreach($no_incluye as $key=>$value) {
 <div class="clear"></div>
 <p class="titulo"><?php echo RECOMENDACION; //Campo description?></p>
 <ul class="lista">
-<?
+<?php
 $description = explode("\n",$row_tour['description'.$idiomaDB]);
 foreach($description as $key=>$value) {
 ?>
