@@ -187,3 +187,9 @@ button{width:auto; overflow:visible; cursor:pointer;}
 
 
 .preciosmxn, .bustour { color: #4D9500; line-height:70%; font-size: 11px !important; text-align: center; }
+
+/* Additions by David Leal */
+.ui-autocomplete-loading { 
+	background:url('loading.gif') no-repeat right center;
+	background-size: contain;
+}

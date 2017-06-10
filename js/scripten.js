@@ -1,24 +1,24 @@
 $("#ajxnomTour").autocomplete({
-				source: function( request, response ) {
-				$.ajax({
-					url: "http://www.geckocancuntours.com/completar/tours.php",
-					dataType: "json",
-					data: {nomTour: request.term},
-					success: function(data) {
-            					response($.map(data, function(item) {
-                				return {
-									label: item.nom_tour,
-									id_tour: item.id_tour
-									};
-            				}));
-						}
-					});
-				},
-				minLength: 2,
-				select: function(event, ui) {
-					$('#ajxid_tour').val(ui.item.id_tour);
-				}
-			});
+	source: function( request, response ) {
+		$.ajax({
+			url: "http://www.geckocancuntours.com/completar/tours.php",
+			dataType: "jsonp",
+			data: {nomTour: request.term},
+			success: function(data) {
+					response($.map(data, function(item) {
+    				return {
+						label: item.nom_tour,
+						id_tour: item.id_tour
+						};
+				}));
+			}
+		});
+	},
+	minLength: 2,
+	select: function(event, ui) {
+		$('#ajxid_tour').val(ui.item.id_tour);
+	}
+});
 
 
 	

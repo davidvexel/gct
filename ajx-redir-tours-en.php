@@ -1,4 +1,4 @@
-<?
+<?php
 sleep(2);
 include("include/config.php");
 include('include/function.php');

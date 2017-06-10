@@ -4,7 +4,7 @@
 <p class="titulo"><?php echo FORMBUSCARTITULO ?></p>
     <input type="text" name="nomTour" id="ajxnomTour">
     <input  type="hidden" name="id_tour" id="ajxid_tour"  />
-<button><?php echo FORMBUSCARBOTON ?></button>
+<button type="submit"><?php echo FORMBUSCARBOTON ?></button>
 <a href="<?php echo $path; ?>en/todos.php"><span class="bustour">See all Tours..</span></a>
 <div id="alertafrom"></div>
 </form>

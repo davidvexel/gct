@@ -1,7 +1,7 @@
 $("#ajxnomTour").autocomplete({
 				source: function( request, response ) {
 				$.ajax({
-					url: "http://www.geckocancuntours.com/completar/tours.php",
+					url: "/completar/tours.php",
 					dataType: "json",
 					data: {nomTour: request.term},
 					success: function(data) {
@@ -41,7 +41,7 @@ $("#ajxnomTour").autocomplete({
 					url: "http://www.geckocancuntours.com/en/ajx-redir-tours-en.php",
 					data:v,
 					beforeSend: function(){
-					$("#alertafrom").html('<p align="center">Espere un momento</p>');
+					$("#alertafrom").html('<p align="center">Wait a moment please...</p>');
 						},
 						success: function(data){
 							document.location=data.url;
