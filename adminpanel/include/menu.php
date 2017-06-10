@@ -46,6 +46,28 @@
 
 <table width="185" height="2" cellpadding="3" cellspacing="3">
 	<tr>
+		<td bgcolor="#BFC6D5">&nbsp;<b>Hoteles</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#B1CBE4"><img src="images/arrow_yellow.gif" width="6" height="8" border="0" />&nbsp;<a href="list-hotels.php">Ver Hoteles</a></td>
+	</tr>
+</table>
+
+<br>
+
+<table width="185" height="2" cellpadding="3" cellspacing="3">
+	<tr>
+		<td bgcolor="#BFC6D5">&nbsp;<b>Zonas</b></td>
+	</tr>
+	<tr>
+		<td bgcolor="#B1CBE4"><img src="images/arrow_yellow.gif" width="6" height="8" border="0" />&nbsp;<a href="list-zones.php">Ver Zonas</a></td>
+	</tr>
+</table>
+
+<br>
+
+<table width="185" height="2" cellpadding="3" cellspacing="3">
+	<tr>
 		<td bgcolor="#BFC6D5">&nbsp;<b>Slider</b></td>
 	</tr>
 	<tr>
