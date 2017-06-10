@@ -1,0 +1,42 @@
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+/* FlexSlider Default Theme
+*********************************/
+.flexslider{position:relative; margin:0; zoom:1;}
+.flex-viewport{max-height:2000px; -webkit-transition:all 1s ease; -moz-transition:all 1s ease; transition:all 1s ease;}
+.loading .flex-viewport{max-height:300px;}
+.flexslider .slides{zoom:1;}
+/* Direction Nav */
+.flex-direction-nav{*height:0;}
+.flex-direction-nav a{position:absolute; top:50%; z-index:10; width:30px; height:40px; margin:-20px 0 0; display:block; cursor:pointer; text-indent:-9999px; background:url(../imagenes/iconos/arrows.png) no-repeat 0 0;}
+.flex-direction-nav .flex-next{background-position:100% 0; right:0;}
+.flex-direction-nav .flex-prev{left:0;}
+.flexslider:hover .flex-next:hover{background-position:100% 100%;}
+.flexslider:hover .flex-prev:hover{background-position:0 100%;}
+.flex-direction-nav .flex-disabled{cursor:default;}
+/* Control Nav */
+.flex-control-nav{position:absolute; right:10px; bottom:10px; width:auto;}
+.flex-control-nav li{margin:0 4px; display:inline-block; zoom:1; *display:inline;}
+.flex-control-paging li a{width:14px; height:14px; display:block; text-indent:-9999px; cursor:pointer; background-color:#FFF;}
+.flex-control-paging li a:hover,.flex-control-paging li a.flex-active{background-color:#5BAD04;}
+.flex-control-paging li a.flex-active{cursor:default;}
