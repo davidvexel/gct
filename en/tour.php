@@ -138,8 +138,14 @@ foreach($description as $key=>$value) {
 <?php $precio_nino = number_format($row_tour['precio_nino'], 2); ?>
 <p><?php echo PRECIONINO; ?> <span>$<?php echo $precio_nino; ?> <?php echo $row_tour['tm']; ?></span><a class="preciosmxn" href="#"><?php echo round($PrecioNino,2) ." MXN"; ?></a></p>
 </div><!--fin .preTour-->
-<div class="clear"></div>
+
+<!-- Book tour -->
 <form class="reservar" id="reservar">
+<label>Hotel</label>
+<input name="hotel" type="text" class="" id="hotel" />
+<input type="hidden" id="hotel_id" />
+<input type="hidden" id="hotel_zone" />
+
 <label><?php echo FECHA; ?></label>
 <input name="fecha" type="text" class="date" id="fecha" autocomplete="off">
 <fieldset class="middle column">
