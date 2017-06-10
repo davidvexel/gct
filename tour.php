@@ -145,6 +145,8 @@ foreach($description as $key=>$value) {
 </div><!--fin .preTour-->
 <div class="clear"></div>
 <form class="reservar" id="reservar">
+<label>Hotel</label>
+<input name="hotel" type="text" class="" id="hotel" />
 <label><?php echo FECHA; ?></label>
 <input name="fecha" type="text" class="date" id="fecha" autocomplete="off">
 <fieldset class="middle column">
