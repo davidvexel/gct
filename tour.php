@@ -144,9 +144,13 @@ foreach($description as $key=>$value) {
 <p><span>$<?php echo round($PrecioNino,2) ." MXN"; ?></span></p><?php */?>
 </div><!--fin .preTour-->
 <div class="clear"></div>
+<!-- Book tour -->
 <form class="reservar" id="reservar">
 <label>Hotel</label>
 <input name="hotel" type="text" class="" id="hotel" />
+<input type="hidden" id="hotel_id" />
+<input type="hidden" id="hotel_zone" />
+
 <label><?php echo FECHA; ?></label>
 <input name="fecha" type="text" class="date" id="fecha" autocomplete="off">
 <fieldset class="middle column">
