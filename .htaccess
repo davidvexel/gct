@@ -1,9 +1,0 @@
-Options +SymLinksIfOwnerMatch
-RewriteEngine On
-RewriteBase /
-Options -Multiviews
-RewriteCond %{SERVER_PORT} !=443
-#RewriteRule ^ https://www.geckocancuntours.com%{REQUEST_URI} [R,L]
-RewriteRule ^tours/([0-9]+)-(.+)\.php$ tours.php?id_cat=$1&nom_cat=$2 [L]
-RewriteRule ^detalles/([0-9]+)-(.+)\.php$ tour.php?id_tour=$1$nom_tour=$2 [L]
-#ErrorDocument 404 https://www.geckocancuntours.com/
