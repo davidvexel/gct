@@ -193,3 +193,13 @@ button{width:auto; overflow:visible; cursor:pointer;}
 	background:url('loading.gif') no-repeat right center;
 	background-size: contain;
 }
+
+.payments {
+	margin: 10px 2px;
+}
+
+.payments .method {
+	margin: 15px 0;
+	font-size: 14px;
+	font-weight: 600;
+}
