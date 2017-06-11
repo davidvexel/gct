@@ -43,6 +43,8 @@ class Orders_Tours extends \Conekta\Conekta {
 
 	/**
 	 * Class constructor
+	 *
+	 * @param array $order_data
 	 */
 	public function __construct( $order_data = '' ) {
 
@@ -78,7 +80,9 @@ class Orders_Tours extends \Conekta\Conekta {
 
 	/**
 	 * Save order data
+	 *
 	 * @param array $data
+	 * @return int order id
 	 */
 	public function save_order( $data ) {
 
@@ -94,8 +98,8 @@ class Orders_Tours extends \Conekta\Conekta {
 		 */
 		$inser_sql = sprintf( 
 			"INSERT INTO ordenes 
-				(nombre, telefono, correo, pais, hotel, forma_pago, mensaje, monto, tour, fecha_tour, fecha, adultos, ninos, status, idioma, imagen) 
-			VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, '%s', '%s', %s, %s, '%s', '%s', '%s' )", 
+				(nombre, telefono, correo, pais, hotel, forma_pago, mensaje, monto, tour, fecha_tour, fecha, adultos, ninos, status, idioma, imagen, tour_name) 
+			VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, '%s', '%s', %s, %s, '%s', '%s', '%s', '%s' )", 
 
 			$data['nombre'],
 			$data['telefono'],
@@ -112,7 +116,8 @@ class Orders_Tours extends \Conekta\Conekta {
 			$data['ninos'],
 			'pending',
 			'es',
-			$data['imagen']
+			$data['imagen'],
+			$data['nom_tour']
 		);
 
 		/**
@@ -172,13 +177,21 @@ class Orders_Tours extends \Conekta\Conekta {
 		        );
 		
 		try {
-		  $order = \Conekta\Order::create( $valid_order );
+			
+			$order = \Conekta\Order::create( $valid_order );
+		
 		} catch ( \Conekta\Conekta\ProcessingError $e ){ 
-		  echo $e->getMessage();
+		
+			echo $e->getMessage();
+		
 		} catch ( \Conekta\Conekta\ParameterValidationError $e ){
-		  echo $e->getMessage();
+		
+			echo $e->getMessage();
+		
 		} catch ( \Conekta\Conekta\Handler $error ){
-		  echo $error->getMessage();
+		
+			echo $error->getMessage();
+		
 		}
 
 		return $order;
@@ -227,13 +240,21 @@ class Orders_Tours extends \Conekta\Conekta {
 		        );
 		
 		try {
-		  $order = \Conekta\Conekta\Order::create( $valid_order );
+		
+			$order = \Conekta\Conekta\Order::create( $valid_order );
+		
 		} catch ( \Conekta\Conekta\ProcessingError $e ){ 
-		  echo $e->getMessage();
+		
+			echo $e->getMessage();
+		
 		} catch ( \Conekta\Conekta\ParameterValidationError $e ){
-		  echo $e->getMessage();
+		
+			echo $e->getMessage();
+		
 		} catch ( \Conekta\Conekta\Handler $error ){
-		  echo $error->getMessage();
+		
+			echo $error->getMessage();
+		
 		}
 
 		return $order;

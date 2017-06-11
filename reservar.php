@@ -69,7 +69,7 @@
 						<li>Fecha <span><?php echo $fecha; ?></span></li>
 						<li>Adultos <span><?php echo $adultos; ?> Adultos ($<?php echo $precio_adulto. " " .$tm; ?> c/u) ($<?php print $subtotal1. " " .$tm; ?> sub-total)</span></li>
 						<li>Niños <span><?php echo $ninos; ?> Niños ($<?php echo $precio_nino. " " .$tm; ?> c/u) ($<?php print $subtotal2. " " .$tm; ?> sub-total)</span></li>
-						<li>Total <span>$<?php print $total. " " .$tm; ?></span></li>
+						<li>Total <b><span>$<?php print $total. " " .$tm; ?></span></b></li>
 					</ul>
 				</div>
 				<!--nine.columns-->
@@ -353,7 +353,7 @@
 
 					<div class="payments">
 						<div class="method">
-							<input type="radio" name="payment" checked="checked" value="paypal"> Paypal
+							<input type="radio" name="payment" checked="checked" value="paypal"> Transferencia o Depósito
 						</div>
 						<div class="method">
 							<input type="radio" name="payment" value="oxxo"> OXXO
