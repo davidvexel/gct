@@ -29,7 +29,9 @@ define("FORMCODIGO","Código de verificación");
 define("FORMENVIAR","Enviar");
 define("FORMRESERVAR","Reservar");
 define("FORMCONFIRMAR","Confirmar");
-define("FORMOBLIGATORIO","campos obligatorios");
+define("FORMOBLIGATORIO","Campos obligatorios");
+define("FORMTERMS", "Al hacer clic en confirmar acepto los <a href='#ex1' rel='modal:open'>Terminos y Condiciones</a>" );
+
 /*MENSAJES DE VALIDACION*/
 define("INGRESARNOMBRE","Ingrese su nombre");
 define("INGRESARCORREO","Ingrese un correo valido");

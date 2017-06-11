@@ -395,10 +395,20 @@
 					</div>
 					
 					</br></br>
+
 					<label><?php echo FORMCODIGO; ?> <span>*</span></label>
+					
 					<input name="codigo" id="codigo" type="text" class="captcha" tabindex="11" autocomplete="off" maxlength="6">
+					
 					<button type="submit"><?php echo FORMCONFIRMAR; ?></button>
+					
 					<p><small><span>*</span> <?php echo FORMOBLIGATORIO; ?></small></p>
+					<p><small><span>*</span> <?php echo FORMTERMS; ?></small></p>
+
+					<!-- Información de seguridad -->
+					<!-- Metodos de pago aceptados -->
+					<!-- Al hacer click acepto los terminos y condiciones -->
+
 					<input type="hidden" name="reservaciones" value="reservaciones" />
 					<input type="hidden" name="tour_id" value="<?php echo $tour_id; ?>" />
 					<input type="hidden" name="nom_tour" value="<?php echo $nom_tour; ?>" />
