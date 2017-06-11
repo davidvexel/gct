@@ -43,6 +43,7 @@
 				<p><?php echo TEXTO_RESERVAR; ?></p>
 				<p class="titulo"><?php echo DETALLESRESERVACION; ?></p>
 				<?php 
+					$tour_id = $row_tour['id_tour'];
 					$nom_tour = $row_tour['nom_tour'];
 					$fecha = $_SESSION['fecha'];
 					$tm = $row_tour['tm'];
@@ -85,9 +86,13 @@
 						<input name="hotel"  id="hotel" type="text" tabindex="6">
 					</fieldset>
 					<fieldset class="six columns omega">
+						
 						<label><?php echo FORMTELEFONO; ?> <span>*</span></label>
+						
 						<input name="telefono" id="telefono" type="text" tabindex="2">
+						
 						<label><?php echo FORMPAIS; ?></label>
+						
 						<select name="pais" id="pais" tabindex="4">
 							<option>Afghanistan</option>
 							<option>Albania</option>
@@ -331,12 +336,11 @@
 							<option>Zambia</option>
 							<option>Zimbabwe</option>
 						</select>
+						
 						<label><?php echo FORMPAGO; ?> <span>*</span></label>
-						<select name="FP" id="FP" tabindex="7" >
-							<option value="0"><?php echo FORMSELECCIONAR; ?></option>
-							<option><?php echo FORMTRANSFERENCIA; ?></option>
-							<option><?php echo FORMPAYPAL; ?></option>
-						</select>
+						
+						<input type="text" />
+
 					</fieldset>
 					<div class="clear"></div>
 					<label><?php echo FORMMENSAJE; ?></label>
@@ -349,13 +353,13 @@
 
 					<div class="payments">
 						<div class="method">
-							<input type="radio" name="payment" value="Paypal"> Paypal
+							<input type="radio" name="payment" checked="checked" value="paypal"> Paypal
 						</div>
 						<div class="method">
-							<input type="radio" name="payment" value="OXXO"> OXXO
+							<input type="radio" name="payment" value="oxxo"> OXXO
 						</div>
 						<div class="method">
-							<input type="radio" name="payment" value="Tarjeta de Crédito"> Tarjeta de Crédito
+							<input type="radio" name="payment" value="card"> Tarjeta de Crédito
 						</div>
 					</div>
 					
@@ -364,9 +368,8 @@
 					<input name="codigo" id="codigo" type="text" class="captcha" tabindex="6" autocomplete="off" maxlength="6">
 					<button type="submit"><?php echo FORMCONFIRMAR; ?></button>
 					<p><small><span>*</span> <?php echo FORMOBLIGATORIO; ?></small></p>
-					<?php $CR = substr(md5(uniqid(rand())),0,6); ?>
 					<input type="hidden" name="reservaciones" value="reservaciones" />
-					<input type="hidden" name="CR" value="<?php echo $CR; ?>" />
+					<input type="hidden" name="tour_id" value="<?php echo $tour_id; ?>" />
 					<input type="hidden" name="nom_tour" value="<?php echo $nom_tour; ?>" />
 					<input type="hidden" name="fecha" value="<?php echo $fecha; ?>" />
 					<input type="hidden" name="adultos" value="<?php echo $adultos; ?>" />
@@ -396,7 +399,7 @@
 					var email = $("#email").val();
 					var codigo = $("#codigo").val();
 					var telefono = $("#telefono").val();
-					var FP = $("#FP").val();
+					// var payment = $("#payment").val();
 					
 					if(nombre.length == 0){
 						error = true;
@@ -432,12 +435,12 @@
 						$('#codigo').css({"color":"#666","background-color":"#fff"});
 					}
 					
-					if(FP == 0){
-					error = true;
-					$('#FP').css({'background-color' : '#ffcccc'});
-					} else {
-						$('#FP').css({'background-color' : '#fff'});
-						}
+					// if(FP == 0){
+					// error = true;
+					// $('#FP').css({'background-color' : '#ffcccc'});
+					// } else {
+					// 	$('#FP').css({'background-color' : '#fff'});
+					// 	}
 						
 					if(error == false){ 
 					var v=$("#formulario").serialize();
@@ -452,9 +455,8 @@
 							$("#msn").html('<p class="alerta satisfactorio" align="center">Enviando Reservación espere un momento</p>');
 								},
 							success: function(data){
-							$("#formulario").hide();
-		      				$("#msn").html(data);
-							
+								$("#formulario").hide();
+		      					$("#msn").html(data);
 							}
 						});
 					}
@@ -465,7 +467,5 @@
 </body>
 </html>
 <?php
-	$conekta = new Orders_Tours( 'there go you fuckin data' );
-	var_dump( $conekta );
 	mysqli_free_result($tour);
 ?>
