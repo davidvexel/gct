@@ -80,19 +80,23 @@
 					<fieldset class="six columns alpha">
 						<label><?php echo FORMNOMBRE; ?> <span>*</span></label>
 						<input name="nombre" id="nombre" type="text" tabindex="1">
+						
 						<label><?php echo FORMCORREO; ?> <span>*</span></label>
 						<input name="email" id="email" type="text" tabindex="3">
-						<label>Hotel</label>
-						<input name="hotel"  id="hotel" type="text" tabindex="6">
+
+						<label>Dirección <span>*</span></label>
+						<input name="direccion"  id="direccion" type="text" tabindex="5">
+
+						<label>Código Postal <span>*</span></label>
+						<input name="cp"  id="cp" type="text" tabindex="7">
 					</fieldset>
+
 					<fieldset class="six columns omega">
 						
 						<label><?php echo FORMTELEFONO; ?> <span>*</span></label>
-						
 						<input name="telefono" id="telefono" type="text" tabindex="2">
 						
 						<label><?php echo FORMPAIS; ?></label>
-						
 						<select name="pais" id="pais" tabindex="4">
 							<option>Afghanistan</option>
 							<option>Albania</option>
@@ -337,14 +341,16 @@
 							<option>Zimbabwe</option>
 						</select>
 						
-						<label><?php echo FORMPAGO; ?> <span>*</span></label>
-						
-						<input type="text" />
+						<label><?php echo 'Estado'; ?> <span>*</span></label>
+						<input type="text" name="estado" tabindex="6" />
+
+						<label><?php echo 'Hotel'; ?></label>
+						<input type="text" name="hotel" tabindex="8" />
 
 					</fieldset>
 					<div class="clear"></div>
 					<label><?php echo FORMMENSAJE; ?></label>
-					<textarea name="comen" id="comen" tabindex="5"></textarea>
+					<textarea name="comen" id="comen" tabindex="9"></textarea>
 					
 					<div class="clear"></div>
 					<p class="titulo"><?php echo 'Detalles de Pago'; ?></p>
@@ -353,19 +359,44 @@
 
 					<div class="payments">
 						<div class="method">
-							<input type="radio" name="payment" checked="checked" value="paypal"> Transferencia o Depósito
+							<input id="bank" type="radio" name="payment" checked="checked" value="bank" tabindex="10"> 
+							<label for="bank">Transferencia o Depósito</label>
 						</div>
 						<div class="method">
-							<input type="radio" name="payment" value="oxxo"> OXXO
+							<input id="oxxo" type="radio" name="payment" value="oxxo">
+							<label for="oxxo">OXXO</label>
 						</div>
 						<div class="method">
-							<input type="radio" name="payment" value="card"> Tarjeta de Crédito
+							<input id="card" type="radio" name="payment" value="card">
+							<label for="card">Tarjeta de Crédito</label>
 						</div>
 					</div>
 					
+					<!-- Card payment details -->
+					<div id="card-payment" style="display:none">
+						<fieldset class="four columns alpha">
+							<label for="">Numero de Tarjeta</label>
+							<input type="text" name="card_number">
+						</fieldset>
 
+						<fieldset class="eight columns omega">
+							<label for="">Expiración</label>
+							<select class="third" name="exp_month" id="exp_month">
+								<option value="01">Ene</option>
+							</select>
+
+							<select class="third" name="exp_year" id="exp_year">
+								<option value="17">2017</option>
+							</select>
+
+							<input class="third" type="password" name="card_number" size="3" placeholder="CVV">
+						</fieldset>
+						<br><br>
+					</div>
+					
+					</br></br>
 					<label><?php echo FORMCODIGO; ?> <span>*</span></label>
-					<input name="codigo" id="codigo" type="text" class="captcha" tabindex="6" autocomplete="off" maxlength="6">
+					<input name="codigo" id="codigo" type="text" class="captcha" tabindex="11" autocomplete="off" maxlength="6">
 					<button type="submit"><?php echo FORMCONFIRMAR; ?></button>
 					<p><small><span>*</span> <?php echo FORMOBLIGATORIO; ?></small></p>
 					<input type="hidden" name="reservaciones" value="reservaciones" />

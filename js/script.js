@@ -98,3 +98,12 @@ function get_price_by_zone( zona, tour_id ) {
 		}
 	});
 }
+
+// Show card payment form
+$(':radio').click(function () {
+	if ($('#card').is(':checked')) {
+		$("#card-payment").show("slow");
+    } else {
+		$("#card-payment").hide("slow");
+	}            
+});
