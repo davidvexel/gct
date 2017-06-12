@@ -79,22 +79,20 @@
 				<form class="formulario" id="formulario">
 					<fieldset class="six columns alpha">
 						<label><?php echo FORMNOMBRE; ?> <span>*</span></label>
-						<input name="nombre" id="nombre" type="text" tabindex="1">
+						<input name="nombre" id="nombre" type="text" tabindex="1" data-conekta="card[name]" required="required">
 						
 						<label><?php echo FORMCORREO; ?> <span>*</span></label>
-						<input name="email" id="email" type="text" tabindex="3">
+						<input name="email" id="email" type="email" tabindex="3" required="required">
 
-						<label>Dirección <span>*</span></label>
+						<label>Dirección</label>
 						<input name="direccion"  id="direccion" type="text" tabindex="5">
 
-						<label>Código Postal <span>*</span></label>
-						<input name="cp"  id="cp" type="text" tabindex="7">
 					</fieldset>
 
 					<fieldset class="six columns omega">
 						
 						<label><?php echo FORMTELEFONO; ?> <span>*</span></label>
-						<input name="telefono" id="telefono" type="text" tabindex="2">
+						<input name="telefono" id="telefono" type="text" tabindex="2" required="required">
 						
 						<label><?php echo FORMPAIS; ?></label>
 						<select name="pais" id="pais" tabindex="4">
@@ -341,16 +339,14 @@
 							<option>Zimbabwe</option>
 						</select>
 						
-						<label><?php echo 'Estado'; ?> <span>*</span></label>
-						<input type="text" name="estado" tabindex="6" />
-
 						<label><?php echo 'Hotel'; ?></label>
-						<input type="text" name="hotel" tabindex="8" />
+						<input type="text" name="hotel" tabindex="6" />
+
 
 					</fieldset>
 					<div class="clear"></div>
 					<label><?php echo FORMMENSAJE; ?></label>
-					<textarea name="comen" id="comen" tabindex="9"></textarea>
+					<textarea name="comen" id="comen" tabindex="7"></textarea>
 					
 					<div class="clear"></div>
 					<p class="titulo"><?php echo 'Detalles de Pago'; ?></p>
@@ -359,7 +355,7 @@
 
 					<div class="payments">
 						<div class="method">
-							<input id="bank" type="radio" name="payment" checked="checked" value="bank" tabindex="10"> 
+							<input id="bank" type="radio" name="payment" checked="checked" value="bank" tabindex="8"> 
 							<label for="bank">Transferencia o Depósito</label>
 						</div>
 						<div class="method">
@@ -376,29 +372,31 @@
 					<div id="card-payment" style="display:none">
 						<fieldset class="four columns alpha">
 							<label for="">Numero de Tarjeta</label>
-							<input type="text" name="card_number">
+							<input type="text" size="20" data-conekta="card[number]">
 						</fieldset>
 
 						<fieldset class="eight columns omega">
 							<label for="">Expiración</label>
-							<select class="third" name="exp_month" id="exp_month">
+							<select class="third" id="exp_month" data-conekta="card[exp_month]">
 								<option value="01">Ene</option>
 							</select>
 
-							<select class="third" name="exp_year" id="exp_year">
-								<option value="17">2017</option>
+							<select class="third" id="exp_year" data-conekta="card[exp_year]">
+								<option value="18">2018</option>
 							</select>
 
-							<input class="third" type="password" name="card_number" size="3" placeholder="CVV">
+							<input class="third" type="password" size="4" data-conekta="card[cvc]" placeholder="CVV">
 						</fieldset>
 						<br><br>
 					</div>
 					
+					<div class="card-errors"></div>
+
 					</br></br>
 
 					<label><?php echo FORMCODIGO; ?> <span>*</span></label>
 					
-					<input name="codigo" id="codigo" type="text" class="captcha" tabindex="11" autocomplete="off" maxlength="6">
+					<input name="codigo" id="codigo" type="text" class="captcha" tabindex="9" autocomplete="off" maxlength="6"  required="required">
 					
 					<button type="submit"><?php echo FORMCONFIRMAR; ?></button>
 					
@@ -430,81 +428,6 @@
 	<!--fin #wrapper-->
 	<?php include("include/footer.php"); ?>
 	<?php include("include/script.php"); ?>
-	<script type="text/javascript">
-		$(document).ready(function(){ 
-			// @TODO: Tokenizar tarjeta aqui
-			$("#formulario").submit(function(e){
-					e.preventDefault();
-					var error = false;
-					var nombre = $("#nombre").val();
-					var email = $("#email").val();
-					var codigo = $("#codigo").val();
-					var telefono = $("#telefono").val();
-					// var payment = $("#payment").val();
-					
-					if(nombre.length == 0){
-						error = true;
-						document.getElementById('nombre').placeholder = "<?php echo INGRESARNOMBRE; ?>";
-						$("#nombre").css({"color":"#FFF","background-color":"#ffcccc"});
-						
-					} else {
-						$("#nombre").css({"color":"#666","background-color":"#fff"});
-					}
-					
-					if(!(/\w+([-+.']\w+)*@\w+([-.]\w+)/.test(email))){
-						error = true;
-						document.getElementById('email').placeholder = "<?php echo INGRESARCORREO; ?>";
-							$('#email').css({"color":"#FFF","background-color":"#ffcccc"});
-					} else {
-						$('#email').css({"color":"#666","background-color":"#fff"});
-					}
-					
-					if(telefono.length == 0){
-						error = true;
-						document.getElementById('telefono').placeholder = "Ingresar Teléfono";
-						$("#telefono").css({"color":"#FFF","background-color":"#ffcccc"});
-						
-					} else {
-						$("#telefono").css({"color":"#666","background-color":"#fff"});
-					}
-					
-					if(codigo.length == 0 || codigo != "<?php echo date("jny"); ?>") {
-						error = true;
-							document.getElementById('codigo').placeholder = "<?php echo INGRESARCODIGO; ?>";
-							$("#codigo").css({"color":"#FFF","background-color":"#ffcccc"});
-					} else {
-						$('#codigo').css({"color":"#666","background-color":"#fff"});
-					}
-					
-					// if(FP == 0){
-					// error = true;
-					// $('#FP').css({'background-color' : '#ffcccc'});
-					// } else {
-					// 	$('#FP').css({'background-color' : '#fff'});
-					// 	}
-						
-					if(error == false){ 
-					var v=$("#formulario").serialize();
-					$.ajax({
-							async:true,
-							type: "post",
-							dataType: "html",
-							url: "enviar-reservacion.php",
-							data:v,
-							beforeSend: function(){
-		
-							$("#msn").html('<p class="alerta satisfactorio" align="center">Enviando Reservación espere un momento</p>');
-								},
-							success: function(data){
-								$("#formulario").hide();
-		      					$("#msn").html(data);
-							}
-						});
-					}
-					
-			});
-		});
-	</script>
 </body>
 </html>
 <?php

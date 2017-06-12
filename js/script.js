@@ -107,3 +107,50 @@ $(':radio').click(function () {
 		$("#card-payment").hide("slow");
 	}            
 });
+
+// Process reservation
+Conekta.setPublishableKey('key_EsnjHpWA5rskw9yTNrWyaRA');
+
+var conektaSuccessResponseHandler = function(token) {
+	var $form = $("#formulario");
+	
+	//Inserta el token_id en la forma para que se envíe al servidor
+	$form.append($('<input type="hidden" name="conektaTokenId">').val(token.id));
+	
+	// serialize form
+	var values = $($form).serialize();
+
+	// send form to .php
+	$.ajax({
+		async: true,
+		type: "POST",
+		dataType: "html",
+		url: "/enviar-reservacion.php",
+		data: values,
+		beforeSend: function() {
+			$("#msn").html('<p class="alerta satisfactorio" align="center">Enviando Reservación espere un momento</p>');
+		},
+		success: function(data){
+			$("#formulario").hide();
+			$("#msn").html(data);
+		}
+	});
+
+	// $form.get(0).submit(); //Hace submit
+}
+var conektaErrorResponseHandler = function(response) {
+	var $form = $("#formulario");
+	$form.find(".card-errors").text(response.message_to_purchaser);
+	$form.find("button").prop("disabled", false);
+};
+
+//jQuery para que genere el token después de dar click en submit
+$(function() {
+	$("#formulario").submit(function(event) {
+		var $form = $(this);
+		// Previene hacer submit más de una vez
+		$form.find("button").prop("disabled", true);
+		Conekta.token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
+		return false;
+	});
+});

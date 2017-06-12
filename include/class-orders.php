@@ -61,8 +61,37 @@ class Orders_Tours extends \Conekta\Conekta {
 				/**
 				 * Create the charge in Conekta
 				 */
-				// if payment method oxxo, conekta oxxo charge
-				$charge = $this->conekta_oxxo_charge( $this->order_data, $order_id );
+				if( 'oxxo' === $this->order_data['payment'] ) {
+
+					/**
+					 * Generate oxxo payment
+					 */
+					$charge = $this->conekta_oxxo_charge( $this->order_data, $order_id );
+
+				} else if ( 'card' === $this->order_data['payment'] ) {
+
+					/**
+					 * Create customer
+					 */
+
+					$customer = $this->conekta_customer( $this->order_data );
+
+					/**
+					 * Generate card payment
+					 */
+					if( ! empty( $customer ) || null !== $customer ) {
+						
+						$charge = $this->conekta_card_charge( $customer, $this->order_data, $order_id );
+					
+					} else {
+					
+						throw new Exception( "Something went wrong", 1 );
+					
+					}
+				
+				} else {
+					// deposit
+				}
 
 				/**
 				 * Update order with payment info
@@ -146,35 +175,33 @@ class Orders_Tours extends \Conekta\Conekta {
 		\Conekta\Conekta::setApiKey( $this->conekta_api_key );
 		\Conekta\Conekta::setApiVersion( $this->conekta_api_version );
 
-		$valid_order =
-		    array(
-		        'line_items'=> array(
-		            array(
-		                'name'        => 'Box of Cohiba S1s',
-		                'description' => 'Imported From Mex.',
-		                'unit_price'  => 20000,
-		                'quantity'    => 1,
-		                'sku'         => 'cohb_s1',
-		                'category'    => 'food',
-		                'tags'        => array('food', 'mexican food')
-		                )
-		           ),
-		          'currency'    => 'mxn',
-		          'metadata'    => array('test' => 'extra info'),
-		          'charges' => array(
-						array(
-							'payment_method' => array(
-								'type' => 'oxxo_cash'
-							)//payment_method
-						)
-				    ),
-		            'currency'      => 'mxn',
-		            'customer_info' => array(
-		                'name'  => 'John Constantine',
-		                'phone' => '+5213353319758',
-		                'email' => 'hola@hola.com'
-		            )
-		        );
+		$valid_order = array(
+			'line_items'=> array(
+				array(
+					'name'        => $order_data['nom_tour'],
+					'description' => $order_data['adultos'] . ' Adultos - ' . $order_data['ninos'],
+					'unit_price'  => 20000,
+					'quantity'    => 1,
+					'sku'         => $order_data['tour_id'],
+					'category'    => 'tours',
+					'tags'        => array('tours', 'gecko cancun tours')
+				)
+			),
+			'metadata' => array('source' => 'Gecko Cancun Tours'),
+			'charges'  => array(
+				array(
+					'payment_method' => array(
+						'type' => 'oxxo_cash'
+					)//payment_method
+				)
+			),
+			'currency' => 'mxn',
+			'customer_info' => array(
+				'name'  => $order_data['nombre'],
+				'phone' => $order_data['telefono'],
+				'email' => $order_data['email']
+			)
+		);
 		
 		try {
 			
@@ -198,63 +225,86 @@ class Orders_Tours extends \Conekta\Conekta {
 	}
 
 	/**
+	 * Create conekta customer
+	 *
+	 * @param array $order_data
+	 * @return obj $customer
+	 */
+	public function conekta_customer( $order_data ) {
+		\Conekta\Conekta::setApiKey( $this->conekta_api_key );
+		\Conekta\Conekta::setApiVersion( $this->conekta_api_version );
+
+		try {
+			$customer = \Conekta\Customer::create(
+				array(
+					"name" => $order_data['nombre'],
+					"email" => $order_data['email'],
+					"phone" => $order_data['telefono'],
+					"payment_sources" => array(
+						array(
+							"type" => "card",
+							"token_id" => $order_data['conektaTokenId']
+						)
+					)//payment_sources
+				)//customer
+			);
+		} catch (\Conekta\ProccessingError $error){
+		
+			echo $error->getMesage();
+		
+		} catch (\Conekta\ParameterValidationError $error){
+		
+			echo $error->getMessage();
+		
+		} catch (\Conekta\Handler $error){
+		
+			echo $error->getMessage();
+		
+		}
+
+		return $customer;
+	}
+
+	/**
 	 * Create Conekta Card charge
 	 *
 	 * @param array $order_Data
 	 * @return bool
 	 */
-	public function conekta_card_charge( $order_data ) {
+	public function conekta_card_charge( $customer, $order_data, $order_id ) {
 		\Conekta\Conekta::setApiKey( $this->conekta_api_key );
 		\Conekta\Conekta::setApiVersion( $this->conekta_api_version );
 
-		$valid_order =
-		    array(
-		        'line_items'=> array(
-		            array(
-		                'name'        => 'Box of Cohiba S1s',
-		                'description' => 'Imported From Mex.',
-		                'unit_price'  => 20000,
-		                'quantity'    => 1,
-		                'sku'         => 'cohb_s1',
-		                'category'    => 'food',
-		                'tags'        => array('food', 'mexican food')
-		                )
-		           ),
-		          'currency'    => 'mxn',
-		          'metadata'    => array('test' => 'extra info'),
-		          'charges'     => array(
-		              array(
-		                  'payment_source' => array(
-		                      'type'       => 'oxxo_cash',
-		                      'expires_at' => strtotime(date("Y-m-d H:i:s")) + "36000"
-		                   ),
-		                   'amount' => 20000
-		                )
-		            ),
-		            'currency'      => 'mxn',
-		            'customer_info' => array(
-		                'name'  => 'John Constantine',
-		                'phone' => '+5213353319758',
-		                'email' => 'hola@hola.com'
-		            )
-		        );
-		
 		try {
-		
-			$order = \Conekta\Conekta\Order::create( $valid_order );
-		
-		} catch ( \Conekta\Conekta\ProcessingError $e ){ 
-		
-			echo $e->getMessage();
-		
-		} catch ( \Conekta\Conekta\ParameterValidationError $e ){
-		
-			echo $e->getMessage();
-		
-		} catch ( \Conekta\Conekta\Handler $error ){
-		
+		  $order = \Conekta\Order::create(
+			array(
+				"line_items" => array(
+					array(
+						"name" => $order_data['order_data'],
+						"unit_price" => 1000,
+						"quantity" => 12
+					)
+				), //line_items
+				"currency" => "MXN",
+				"customer_info" => array(
+				"customer_id" => $customer['id']
+				), //customer_info
+				"metadata" => array( "order_id" => $order_id, "tour_id" => $order_data['tour_id'] ),
+				"charges" => array(
+					array(
+						"payment_method" => array(
+							"type" => "default"
+						)//payment_method
+					) //first charge
+				) //charges
+			)//order
+		  );
+		} catch (\Conekta\ProccessingError $error){
+			echo $error->getMesage();
+		} catch (\Conekta\ParameterValidationError $error){
 			echo $error->getMessage();
-		
+		} catch (\Conekta\Handler $error){
+			echo $error->getMessage();
 		}
 
 		return $order;
